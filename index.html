@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Учу бекбон</title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+    <h3>Тестим Бекбон</h3>
+    <div id="my-product-block">
+        <input type="text" id="new-product" />
+
+        <ul id="todo-list"></ul>
+    </div>
+    <script src="lib/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="lib/underscore-min.js" type="text/javascript"></script>
+    <script src="lib/json2.js" type="text/javascript"></script>
+    <script src="lib/backbone-min.js" type="text/javascript"></script>
+    <script src="myscript.js" type="text/javascript"></script>
+
+    <script type="text/template" id="item-template">
+        <div class="task-block">
+            <input <%= done ? 'checked="checked"' : '' %> class="task-edit" type="checkbox" />
+            <label class="my-label"><%= title %></label>
+            <button class="delete-task">Удалить</button>
+        </div>
+    </script>
+    <script type="text/template" id="stats-template">
+
+        <a id="clear-completed"></a>
+
+        <div class="todo-count"></div>
+    </script>
+
+    </body>
+</html>
+
+<script>
+    $(document).ready(function(){
+
+    })
+</script>
